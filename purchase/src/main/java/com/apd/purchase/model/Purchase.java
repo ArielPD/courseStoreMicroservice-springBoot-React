@@ -27,5 +27,5 @@ public class Purchase {
     private Double price;
 
     @Column(name="purchase_time", nullable = false)
-    private LocalDateTime purchase;
+    private LocalDateTime purchaseTime;
 }
