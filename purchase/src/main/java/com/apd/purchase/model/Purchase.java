@@ -12,20 +12,21 @@ public class Purchase {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="pur_uid", nullable = false)
     private Long id;
 
-    @Column(name="user_id", nullable = false)
+    @Column(name="pur_user_id", nullable = false)
     private Long userId;
 
-    @Column(name = "course_id", nullable = false)
+    @Column(name = "pur_course_id", nullable = false)
     private Long courseId;
 
-    @Column(name="title", nullable = false)
+    @Column(name="pur_title", nullable = false)
     private String title;
 
-    @Column(name="price", nullable = false)
+    @Column(name="pur_price", nullable = false)
     private Double price;
 
-    @Column(name="purchase_time", nullable = false)
+    @Column(name="pur_purchase_time", nullable = false)
     private LocalDateTime purchaseTime;
 }
