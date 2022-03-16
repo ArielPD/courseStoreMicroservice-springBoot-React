@@ -4,7 +4,7 @@ import com.apd.purchase.model.Purchase;
 
 import java.util.List;
 
-public interface PurchasseService {
+public interface PurchaseService {
     Purchase savePurchase(Purchase purchase);
 
     List<Purchase> findAllPurchasesOfUser(Long userId);

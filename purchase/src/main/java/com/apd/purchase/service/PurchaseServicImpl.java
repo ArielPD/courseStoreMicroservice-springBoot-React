@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
-public class PurchaseServicImpl implements PurchasseService {
+public class PurchaseServicImpl implements PurchaseService {
 
     @Autowired
     private PurchaseRepository purchaseRepository;

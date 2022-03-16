@@ -1,6 +1,6 @@
 # courseStoreMicroservice-springBoot-React
 
-### Endpoints
+### Endpoints -- Courses Module
 
 ### Save Course
 ```
