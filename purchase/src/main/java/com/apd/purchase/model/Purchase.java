@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
 
 @Entity
 @Table(name="purchase")
@@ -28,5 +29,5 @@ public class Purchase {
     private Double price;
 
     @Column(name="pur_purchase_time", nullable = false)
-    private LocalDateTime purchaseTime;
+    private ZonedDateTime purchaseTime;
 }

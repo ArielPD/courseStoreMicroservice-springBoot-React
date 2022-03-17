@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.apd.purchase.dao.MPurchaseMapper">
+    <!-- Result Maps -->
+    <resultMap id="PurchaseMap" type="com.apd.purchase.core.PurchaseCore">
+        <id     column="pur_uid"           property="id"           javaType="long"/>
+        <result column="pur_user_id"       property="userId"       javaType="long"/>
+        <result column="pur_course_id"     property="courseId"     javaType="long"/>
+        <result column="pur_title"         property="title"        javaType="string"/>
+        <result column="pur_price"         property="price"        javaType="double"/>
+        <!--<result column="pur_purchase_time" property="purchaseTime" javaType="java.time.ZonedDateTime"/> -->
+    </resultMap>
+
+    <!-- Queries -->
+    <select id="getAllPurchases" resultMap="PurchaseMap">
+        <![CDATA[
+        SELECT pur_uid,
+               pur_user_id,
+               pur_course_id,
+               pur_title,
+               pur_price,
+               pur_purchase_time
+        FROM purchase
+        ]]>
+    </select>
+
+    <insert id="savePurchaseMybatis">
+        <selectKey keyProperty="purchaseCore.id" resultType="long" order="BEFORE">
+            <![CDATA[
+                SELECT nextval('pur_seq');
+            ]]>
+        </selectKey>
+        <![CDATA[
+            INSERT INTO purchase (
+                     pur_uid,
+                     pur_user_id,
+                     pur_course_id,
+                     pur_title,
+                     pur_price)
+            VALUES (#{purchaseCore.id},
+                    #{purchaseCore.userId},
+                    #{purchaseCore.courseId},
+                    #{purchaseCore.title},
+                    #{purchaseCore.price});
+        ]]>
+    </insert>
+
+</mapper>

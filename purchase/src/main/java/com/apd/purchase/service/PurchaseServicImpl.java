@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
 import java.util.List;
 
 @Service
@@ -16,7 +17,7 @@ public class PurchaseServicImpl implements PurchaseService {
 
     @Override
     public Purchase savePurchase(Purchase purchase) {
-        purchase.setPurchaseTime(LocalDateTime.now());
+        purchase.setPurchaseTime(ZonedDateTime.now());
         return purchaseRepository.save(purchase);
     }
 
