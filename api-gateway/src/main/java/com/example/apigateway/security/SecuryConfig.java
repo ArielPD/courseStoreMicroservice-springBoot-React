@@ -1,5 +1,6 @@
 package com.example.apigateway.security;
 
+import com.example.apigateway.security.jwt.JwtAuthorizationFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,6 +13,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -39,6 +41,14 @@ public class SecuryConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated();
 
 
+        http.addFilterBefore(jwtAuthorizationFilter(), UsernamePasswordAuthenticationFilter.class);
+
+    }
+
+    //Why don't we describe it a a componnt, because of scope.
+    @Bean
+    public JwtAuthorizationFilter jwtAuthorizationFilter() {
+        return new JwtAuthorizationFilter();
     }
 
     @Override
@@ -63,6 +73,6 @@ public class SecuryConfig extends WebSecurityConfigurerAdapter {
                        .allowedOrigins("*")
                        .allowedMethods("*");
             }
-        }
+        };
     }
 }
