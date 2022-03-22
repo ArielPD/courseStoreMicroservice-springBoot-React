@@ -1,6 +1,6 @@
-package com.example.apigateway.service;
+package com.apd.apigateway.service;
 
-import com.example.apigateway.model.User;
+import com.apd.apigateway.model.User;
 
 public interface AuthenticationService {
     User signInAndReturnJWT(User signInRequest);

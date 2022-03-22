@@ -1,8 +1,7 @@
-package com.example.apigateway.security.jwt;
+package com.apd.apigateway.security.jwt;
 
-import com.example.apigateway.security.UserPrincipal;
-import com.example.apigateway.security.jwt.JwtProvider;
-import com.example.apigateway.utils.SecurityUtils;
+import com.apd.apigateway.security.UserPrincipal;
+import com.apd.apigateway.utils.SecurityUtils;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;

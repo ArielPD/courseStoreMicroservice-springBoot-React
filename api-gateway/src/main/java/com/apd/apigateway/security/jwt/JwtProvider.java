@@ -1,6 +1,6 @@
-package com.example.apigateway.security.jwt;
+package com.apd.apigateway.security.jwt;
 
-import com.example.apigateway.security.UserPrincipal;
+import com.apd.apigateway.security.UserPrincipal;
 import org.springframework.security.core.Authentication;
 
 import javax.servlet.http.HttpServletRequest;

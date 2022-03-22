@@ -1,14 +1,10 @@
-package com.example.apigateway.service;
+package com.apd.apigateway.service;
 
-import antlr.BaseAST;
-import com.example.apigateway.model.Role;
-import com.example.apigateway.model.User;
-import com.example.apigateway.repository.UserRepository;
+import com.apd.apigateway.model.Role;
+import com.apd.apigateway.model.User;
+import com.apd.apigateway.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.factory.PasswordEncoderFactories;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;

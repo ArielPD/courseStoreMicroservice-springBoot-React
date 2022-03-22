@@ -1,8 +1,8 @@
-package com.example.apigateway.service;
+package com.apd.apigateway.service;
 
-import com.example.apigateway.model.User;
-import com.example.apigateway.security.UserPrincipal;
-import com.example.apigateway.security.jwt.JwtProvider;
+import com.apd.apigateway.model.User;
+import com.apd.apigateway.security.UserPrincipal;
+import com.apd.apigateway.security.jwt.JwtProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

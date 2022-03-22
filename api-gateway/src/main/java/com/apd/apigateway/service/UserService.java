@@ -1,7 +1,7 @@
-package com.example.apigateway.service;
+package com.apd.apigateway.service;
 
-import com.example.apigateway.model.Role;
-import com.example.apigateway.model.User;
+import com.apd.apigateway.model.Role;
+import com.apd.apigateway.model.User;
 
 import java.util.Optional;
 

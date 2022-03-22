@@ -1,8 +1,8 @@
-package com.example.apigateway.controller;
+package com.apd.apigateway.controller;
 
-import com.example.apigateway.model.Role;
-import com.example.apigateway.security.UserPrincipal;
-import com.example.apigateway.service.UserService;
+import com.apd.apigateway.model.Role;
+import com.apd.apigateway.security.UserPrincipal;
+import com.apd.apigateway.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;

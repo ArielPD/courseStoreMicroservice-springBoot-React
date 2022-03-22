@@ -1,4 +1,4 @@
-package com.example.apigateway.security.jwt;
+package com.apd.apigateway.security.jwt;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;

@@ -1,6 +1,6 @@
-package com.example.apigateway.security;
+package com.apd.apigateway.security;
 
-import com.example.apigateway.model.User;
+import com.apd.apigateway.model.User;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

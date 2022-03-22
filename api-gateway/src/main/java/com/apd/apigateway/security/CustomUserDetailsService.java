@@ -1,8 +1,8 @@
-package com.example.apigateway.security;
+package com.apd.apigateway.security;
 
-import com.example.apigateway.model.User;
-import com.example.apigateway.service.UserService;
-import com.example.apigateway.utils.SecurityUtils;
+import com.apd.apigateway.service.UserService;
+import com.apd.apigateway.model.User;
+import com.apd.apigateway.utils.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

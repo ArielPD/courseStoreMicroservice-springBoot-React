@@ -1,8 +1,8 @@
-package com.example.apigateway.controller;
+package com.apd.apigateway.controller;
 
-import com.example.apigateway.model.User;
-import com.example.apigateway.service.AuthenticationService;
-import com.example.apigateway.service.UserService;
+import com.apd.apigateway.model.User;
+import com.apd.apigateway.service.AuthenticationService;
+import com.apd.apigateway.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

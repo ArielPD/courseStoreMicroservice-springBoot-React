@@ -1,7 +1,7 @@
-package com.example.apigateway.repository;
+package com.apd.apigateway.repository;
 
-import com.example.apigateway.model.Role;
-import com.example.apigateway.model.User;
+import com.apd.apigateway.model.Role;
+import com.apd.apigateway.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

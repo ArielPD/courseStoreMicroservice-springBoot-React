@@ -1,4 +1,4 @@
-package com.example.apigateway.model;
+package com.apd.apigateway.model;
 
 import lombok.Data;
 
