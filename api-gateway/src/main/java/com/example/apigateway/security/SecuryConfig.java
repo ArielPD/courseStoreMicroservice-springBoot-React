@@ -63,7 +63,7 @@ public class SecuryConfig extends WebSecurityConfigurerAdapter {
         return new BCryptPasswordEncoder();
     }
 
-    @Bean
+    /*@Bean
     public WebMvcConfigurer corsConfigurer()
     {
         return new WebMvcConfigurer() {
@@ -74,5 +74,5 @@ public class SecuryConfig extends WebSecurityConfigurerAdapter {
                        .allowedMethods("*");
             }
         };
-    }
+    }*/
 }
