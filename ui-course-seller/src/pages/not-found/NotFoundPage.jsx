@@ -1,7 +1,7 @@
 
 
-export default function HomePage() {
+export default function NotFoundPage() {
     return (
-        <p>Home page</p>
+        <p>NotFoundPage</p>
     )
 }
